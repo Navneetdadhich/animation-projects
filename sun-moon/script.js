@@ -27,7 +27,12 @@ darkMode.addEventListener('click', ()=>{
     .add({
         targets: "h1",
         color: toggle ? 'rgb(22,22,22)':'rgb(122,122,122)'
-    }, '-=500'); 
+    }, '-=500')
+    .add({
+        targets : ".sun",
+        fill :[{value: toggle ? '#EFBE10' : '#ffffff'}]
+
+    }, '-=620');
 
     if(!toggle){
         toggle = true;
